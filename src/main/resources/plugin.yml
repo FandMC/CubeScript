@@ -1,0 +1,9 @@
+name: CubeScript
+version: '1.0'
+main: fandmc.cubescript.Main
+api-version: '1.21'
+commands:
+  cubescript:
+    description: Manage CubeScript commands
+    usage: /cubescript <args>
+    aliases: [cjs]
