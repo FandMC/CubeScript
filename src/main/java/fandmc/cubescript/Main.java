@@ -15,9 +15,7 @@ public class Main extends JavaPlugin {
         instance = this;
         getLogger().info("--------CubeScript--------");
         getLogger().info("启动中......");
-
-        // 注册主命令与 Tab 补全
-        Objects.requireNonNull(getCommand("cubescript")).setExecutor(new CjsCommand());
+        Objects.requireNonNull(getCommand("cubescript")).setExecutor(new CjsCommand(this));
         Objects.requireNonNull(getCommand("cubescript")).setTabCompleter(new CjsTabCompleter());
 
         getLogger().info("CubeScript启动成功");
